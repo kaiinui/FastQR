@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/kaiinui/FastQR"
   s.license      = "MIT"
   s.author       = { "kaiinui" => "lied.der.optik@gmail.com" }
-  s.source       = { :git => "https://github.com/kaiinui/FastQR.git", :tag => "v0.1.1hotfix" }
+  s.source       = { :git => "https://github.com/kaiinui/FastQR.git", :tag => "v0.1.1hotfix2" }
   s.source_files  = "FastQR/Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
   s.requires_arc = true

@@ -1,4 +1,4 @@
-#import "KIFastQRCaptureView.h"
+#import "../Classes/KIFastQRCaptureView.h"
 #import <ReactiveCocoa.h>
 #import <objc/runtime.h>
 
