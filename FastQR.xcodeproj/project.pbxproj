@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4DFF9D0199CF892009EFFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFF9CF199CF892009EFFC4 /* Foundation.framework */; };
+		D4DFF9D2199CF892009EFFC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFF9D1199CF892009EFFC4 /* CoreGraphics.framework */; };
+		D4DFF9D4199CF892009EFFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFF9D3199CF892009EFFC4 /* UIKit.framework */; };
+		D4DFF9DA199CF892009EFFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DFF9D8199CF892009EFFC4 /* InfoPlist.strings */; };
+		D4DFF9DC199CF892009EFFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFF9DB199CF892009EFFC4 /* main.m */; };
+		D4DFF9E0199CF892009EFFC4 /* KIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFF9DF199CF892009EFFC4 /* KIAppDelegate.m */; };
+		D4DFF9E3199CF892009EFFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DFF9E1199CF892009EFFC4 /* Main.storyboard */; };
+		D4DFF9E6199CF892009EFFC4 /* KIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFF9E5199CF892009EFFC4 /* KIViewController.m */; };
+		D4DFF9E8199CF892009EFFC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DFF9E7199CF892009EFFC4 /* Images.xcassets */; };
+		D4DFF9EF199CF892009EFFC4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFF9EE199CF892009EFFC4 /* XCTest.framework */; };
+		D4DFF9F0199CF892009EFFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFF9CF199CF892009EFFC4 /* Foundation.framework */; };
+		D4DFF9F1199CF892009EFFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFF9D3199CF892009EFFC4 /* UIKit.framework */; };
+		D4DFF9F9199CF892009EFFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DFF9F7199CF892009EFFC4 /* InfoPlist.strings */; };
+		D4DFF9FB199CF892009EFFC4 /* FastQRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFF9FA199CF892009EFFC4 /* FastQRTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4DFF9F2199CF892009EFFC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4DFF9C4199CF892009EFFC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4DFF9CB199CF892009EFFC4;
+			remoteInfo = FastQR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4DFF9CC199CF892009EFFC4 /* FastQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DFF9CF199CF892009EFFC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4DFF9D1199CF892009EFFC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4DFF9D3199CF892009EFFC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4DFF9D7199CF892009EFFC4 /* FastQR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastQR-Info.plist"; sourceTree = "<group>"; };
+		D4DFF9D9199CF892009EFFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4DFF9DB199CF892009EFFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4DFF9DD199CF892009EFFC4 /* FastQR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastQR-Prefix.pch"; sourceTree = "<group>"; };
+		D4DFF9DE199CF892009EFFC4 /* KIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIAppDelegate.h; sourceTree = "<group>"; };
+		D4DFF9DF199CF892009EFFC4 /* KIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAppDelegate.m; sourceTree = "<group>"; };
+		D4DFF9E2199CF892009EFFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4DFF9E4199CF892009EFFC4 /* KIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIViewController.h; sourceTree = "<group>"; };
+		D4DFF9E5199CF892009EFFC4 /* KIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIViewController.m; sourceTree = "<group>"; };
+		D4DFF9E7199CF892009EFFC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4DFF9ED199CF892009EFFC4 /* FastQRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastQRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DFF9EE199CF892009EFFC4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4DFF9F6199CF892009EFFC4 /* FastQRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastQRTests-Info.plist"; sourceTree = "<group>"; };
+		D4DFF9F8199CF892009EFFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4DFF9FA199CF892009EFFC4 /* FastQRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastQRTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4DFF9C9199CF892009EFFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFF9D2199CF892009EFFC4 /* CoreGraphics.framework in Frameworks */,
+				D4DFF9D4199CF892009EFFC4 /* UIKit.framework in Frameworks */,
+				D4DFF9D0199CF892009EFFC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DFF9EA199CF892009EFFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFF9EF199CF892009EFFC4 /* XCTest.framework in Frameworks */,
+				D4DFF9F1199CF892009EFFC4 /* UIKit.framework in Frameworks */,
+				D4DFF9F0199CF892009EFFC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4DFF9C3199CF892009EFFC4 = {
+			isa = PBXGroup;
+			children = (
+				D4DFF9D5199CF892009EFFC4 /* FastQR */,
+				D4DFF9F4199CF892009EFFC4 /* FastQRTests */,
+				D4DFF9CE199CF892009EFFC4 /* Frameworks */,
+				D4DFF9CD199CF892009EFFC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4DFF9CD199CF892009EFFC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFF9CC199CF892009EFFC4 /* FastQR.app */,
+				D4DFF9ED199CF892009EFFC4 /* FastQRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4DFF9CE199CF892009EFFC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFF9CF199CF892009EFFC4 /* Foundation.framework */,
+				D4DFF9D1199CF892009EFFC4 /* CoreGraphics.framework */,
+				D4DFF9D3199CF892009EFFC4 /* UIKit.framework */,
+				D4DFF9EE199CF892009EFFC4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4DFF9D5199CF892009EFFC4 /* FastQR */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFFA04199CF8CA009EFFC4 /* Classes */,
+				D4DFF9DE199CF892009EFFC4 /* KIAppDelegate.h */,
+				D4DFF9DF199CF892009EFFC4 /* KIAppDelegate.m */,
+				D4DFF9E1199CF892009EFFC4 /* Main.storyboard */,
+				D4DFF9E4199CF892009EFFC4 /* KIViewController.h */,
+				D4DFF9E5199CF892009EFFC4 /* KIViewController.m */,
+				D4DFF9E7199CF892009EFFC4 /* Images.xcassets */,
+				D4DFF9D6199CF892009EFFC4 /* Supporting Files */,
+			);
+			path = FastQR;
+			sourceTree = "<group>";
+		};
+		D4DFF9D6199CF892009EFFC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFF9D7199CF892009EFFC4 /* FastQR-Info.plist */,
+				D4DFF9D8199CF892009EFFC4 /* InfoPlist.strings */,
+				D4DFF9DB199CF892009EFFC4 /* main.m */,
+				D4DFF9DD199CF892009EFFC4 /* FastQR-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4DFF9F4199CF892009EFFC4 /* FastQRTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFF9FA199CF892009EFFC4 /* FastQRTests.m */,
+				D4DFF9F5199CF892009EFFC4 /* Supporting Files */,
+			);
+			path = FastQRTests;
+			sourceTree = "<group>";
+		};
+		D4DFF9F5199CF892009EFFC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFF9F6199CF892009EFFC4 /* FastQRTests-Info.plist */,
+				D4DFF9F7199CF892009EFFC4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4DFFA04199CF8CA009EFFC4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4DFF9CB199CF892009EFFC4 /* FastQR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DFF9FE199CF892009EFFC4 /* Build configuration list for PBXNativeTarget "FastQR" */;
+			buildPhases = (
+				D4DFF9C8199CF892009EFFC4 /* Sources */,
+				D4DFF9C9199CF892009EFFC4 /* Frameworks */,
+				D4DFF9CA199CF892009EFFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastQR;
+			productName = FastQR;
+			productReference = D4DFF9CC199CF892009EFFC4 /* FastQR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4DFF9EC199CF892009EFFC4 /* FastQRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DFFA01199CF892009EFFC4 /* Build configuration list for PBXNativeTarget "FastQRTests" */;
+			buildPhases = (
+				D4DFF9E9199CF892009EFFC4 /* Sources */,
+				D4DFF9EA199CF892009EFFC4 /* Frameworks */,
+				D4DFF9EB199CF892009EFFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4DFF9F3199CF892009EFFC4 /* PBXTargetDependency */,
+			);
+			name = FastQRTests;
+			productName = FastQRTests;
+			productReference = D4DFF9ED199CF892009EFFC4 /* FastQRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4DFF9C4199CF892009EFFC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kaiinui;
+				TargetAttributes = {
+					D4DFF9EC199CF892009EFFC4 = {
+						TestTargetID = D4DFF9CB199CF892009EFFC4;
+					};
+				};
+			};
+			buildConfigurationList = D4DFF9C7199CF892009EFFC4 /* Build configuration list for PBXProject "FastQR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4DFF9C3199CF892009EFFC4;
+			productRefGroup = D4DFF9CD199CF892009EFFC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4DFF9CB199CF892009EFFC4 /* FastQR */,
+				D4DFF9EC199CF892009EFFC4 /* FastQRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4DFF9CA199CF892009EFFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFF9E8199CF892009EFFC4 /* Images.xcassets in Resources */,
+				D4DFF9DA199CF892009EFFC4 /* InfoPlist.strings in Resources */,
+				D4DFF9E3199CF892009EFFC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DFF9EB199CF892009EFFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFF9F9199CF892009EFFC4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4DFF9C8199CF892009EFFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFF9E6199CF892009EFFC4 /* KIViewController.m in Sources */,
+				D4DFF9E0199CF892009EFFC4 /* KIAppDelegate.m in Sources */,
+				D4DFF9DC199CF892009EFFC4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DFF9E9199CF892009EFFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFF9FB199CF892009EFFC4 /* FastQRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4DFF9F3199CF892009EFFC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4DFF9CB199CF892009EFFC4 /* FastQR */;
+			targetProxy = D4DFF9F2199CF892009EFFC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4DFF9D8199CF892009EFFC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4DFF9D9199CF892009EFFC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4DFF9E1199CF892009EFFC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4DFF9E2199CF892009EFFC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4DFF9F7199CF892009EFFC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4DFF9F8199CF892009EFFC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4DFF9FC199CF892009EFFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4DFF9FD199CF892009EFFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4DFF9FF199CF892009EFFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastQR/FastQR-Prefix.pch";
+				INFOPLIST_FILE = "FastQR/FastQR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4DFFA00199CF892009EFFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastQR/FastQR-Prefix.pch";
+				INFOPLIST_FILE = "FastQR/FastQR-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4DFFA02199CF892009EFFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FastQR.app/FastQR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastQR/FastQR-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FastQRTests/FastQRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4DFFA03199CF892009EFFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FastQR.app/FastQR";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FastQR/FastQR-Prefix.pch";
+				INFOPLIST_FILE = "FastQRTests/FastQRTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4DFF9C7199CF892009EFFC4 /* Build configuration list for PBXProject "FastQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DFF9FC199CF892009EFFC4 /* Debug */,
+				D4DFF9FD199CF892009EFFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DFF9FE199CF892009EFFC4 /* Build configuration list for PBXNativeTarget "FastQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DFF9FF199CF892009EFFC4 /* Debug */,
+				D4DFFA00199CF892009EFFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4DFFA01199CF892009EFFC4 /* Build configuration list for PBXNativeTarget "FastQRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DFFA02199CF892009EFFC4 /* Debug */,
+				D4DFFA03199CF892009EFFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4DFF9C4199CF892009EFFC4 /* Project object */;
+}
