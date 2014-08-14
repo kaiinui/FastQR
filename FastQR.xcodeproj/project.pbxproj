@@ -21,6 +21,7 @@
 		D4DFF9F1199CF892009EFFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFF9D3199CF892009EFFC4 /* UIKit.framework */; };
 		D4DFF9F9199CF892009EFFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DFF9F7199CF892009EFFC4 /* InfoPlist.strings */; };
 		D4DFF9FB199CF892009EFFC4 /* FastQRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFF9FA199CF892009EFFC4 /* FastQRTests.m */; };
+		D4DFFA07199CF948009EFFC4 /* KIFastQRCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFFA06199CF948009EFFC4 /* KIFastQRCaptureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		D4DFF9F6199CF892009EFFC4 /* FastQRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FastQRTests-Info.plist"; sourceTree = "<group>"; };
 		D4DFF9F8199CF892009EFFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4DFF9FA199CF892009EFFC4 /* FastQRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastQRTests.m; sourceTree = "<group>"; };
+		D4DFFA05199CF948009EFFC4 /* KIFastQRCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIFastQRCaptureView.h; sourceTree = "<group>"; };
+		D4DFFA06199CF948009EFFC4 /* KIFastQRCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIFastQRCaptureView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 		D4DFFA04199CF8CA009EFFC4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4DFFA05199CF948009EFFC4 /* KIFastQRCaptureView.h */,
+				D4DFFA06199CF948009EFFC4 /* KIFastQRCaptureView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DFFA07199CF948009EFFC4 /* KIFastQRCaptureView.m in Sources */,
 				D4DFF9E6199CF892009EFFC4 /* KIViewController.m in Sources */,
 				D4DFF9E0199CF892009EFFC4 /* KIAppDelegate.m in Sources */,
 				D4DFF9DC199CF892009EFFC4 /* main.m in Sources */,
