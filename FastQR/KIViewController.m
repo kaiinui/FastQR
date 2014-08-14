@@ -8,6 +8,7 @@
 
 #import "KIViewController.h"
 #import "Classes/KIFastQRCaptureView.h"
+#import "RAC_Classes/KIFastQRCaptureView+ReactiveCocoa.h"
 
 @interface KIViewController ()
 
@@ -21,7 +22,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     KIFastQRCaptureView *fastQR = [[KIFastQRCaptureView alloc] initWithFrame:self.view.frame];
-    [fastQR startCaptureWithDelegate:self];
+    [[fastQR rac_startCapture] subscribeNext:^(id obtainedString) {
+        NSLog(@"%@", obtainedString);
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Got!" message:obtainedString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }];
     [self.view addSubview:fastQR];
 }
 
@@ -29,15 +35,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-# pragma mark - KIFastQRCaptureDelegate
-
-- (void)captureOutput:(NSString *)obtainedString {
-    NSLog(@"%@", obtainedString);
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Got!" message:obtainedString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
 }
 
 @end

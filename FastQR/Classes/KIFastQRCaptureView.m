@@ -2,7 +2,6 @@
 
 @interface KIFastQRCaptureView ()
 
-@property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
 @property (nonatomic, strong) NSString *formerResult;
 
@@ -20,8 +19,9 @@
 }
 
 - (void)startCaptureWithDelegate:(id<KIFastQRCaptureDelegate>)delegate {
-    _delegate = delegate;
     [_session startRunning];
+    _delegate = delegate;
+    
 }
 
 - (void)stopCapture {

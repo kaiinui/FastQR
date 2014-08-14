@@ -17,6 +17,7 @@
 
 @interface KIFastQRCaptureView : UIView <AVCaptureMetadataOutputObjectsDelegate>
 
+@property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, assign) id<KIFastQRCaptureDelegate> delegate;
 
 - (void)startCaptureWithDelegate:(id<KIFastQRCaptureDelegate>)delegate;
