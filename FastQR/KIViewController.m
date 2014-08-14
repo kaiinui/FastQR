@@ -21,8 +21,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     KIFastQRCaptureView *fastQR = [[KIFastQRCaptureView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:fastQR];
     [fastQR startCaptureWithDelegate:self];
+    [self.view addSubview:fastQR];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,6 +35,9 @@
 
 - (void)captureOutput:(NSString *)obtainedString {
     NSLog(@"%@", obtainedString);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Got!" message:obtainedString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end
