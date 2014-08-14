@@ -2,6 +2,8 @@
 
 @implementation KIFastQRCaptureView (ReactiveCocoaAdditions)
 
+@dynamic subscriber;
+
 static void *SubscriberKey = &SubscriberKey;
 
 - (RACSignal *)rac_startCapture {
