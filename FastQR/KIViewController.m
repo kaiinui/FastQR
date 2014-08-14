@@ -7,6 +7,7 @@
 //
 
 #import "KIViewController.h"
+#import "Classes/KIFastQRCaptureView.h"
 
 @interface KIViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:[[KIFastQRCaptureView alloc] initWithFrame:self.view.frame]];
 }
 
 - (void)didReceiveMemoryWarning
