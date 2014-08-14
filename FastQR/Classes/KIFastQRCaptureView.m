@@ -2,7 +2,9 @@
 
 @interface KIFastQRCaptureView ()
 
-@property BOOL isRead;
+@property (nonatomic, strong) AVCaptureSession *session;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
+@property (nonatomic, strong) NSString *formerResult;
 
 @end
 
@@ -12,13 +14,13 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _isRead = false;
         [self initializeCapture];
     }
     return self;
 }
 
 - (void)startCaptureWithDelegate:(id<KIFastQRCaptureDelegate>)delegate {
+    _delegate = delegate;
     [_session startRunning];
 }
 
@@ -84,8 +86,8 @@
 }
 
 - (void)didGetQRCaptureResult:(NSString *)result {
-    if (_isRead) {return;}
-    _isRead = true;
+    if ([_formerResult isEqualToString:result]) {return;}
+    _formerResult = result;
     
     [_delegate captureOutput:result];
 }
