@@ -1,14 +1,32 @@
 #import "KIFastQRCaptureView.h"
 
+@interface KIFastQRCaptureView ()
+
+@property BOOL isRead;
+
+@end
+
 @implementation KIFastQRCaptureView
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        _isRead = false;
         [self initializeCapture];
     }
     return self;
+}
+
+- (void)startCaptureWithDelegate:(id<KIFastQRCaptureDelegate>)delegate {
+    [_session startRunning];
+}
+
+- (void)stopCapture {
+    [_session stopRunning];
+    _session = nil;
+    
+    [_previewLayer removeFromSuperlayer];
 }
 
 # pragma mark - Private Methods
@@ -18,7 +36,6 @@
     if (!session) {return;}
     [self.layer addSublayer:[self setupPreviewLayer]];
     [self setupConnection];
-    [session startRunning];
 }
 
 - (AVCaptureSession *)setupSession {
@@ -60,20 +77,17 @@
     return output;
 }
 
-- (void)setupConnection {
+- (AVCaptureConnection *)setupConnection {
     AVCaptureConnection *connection = _previewLayer.connection;
     connection.videoOrientation = AVCaptureVideoOrientationPortrait;
+    return connection;
 }
 
 - (void)didGetQRCaptureResult:(NSString *)result {
-    NSLog(@"%@", result);
-}
-
-- (void)stopSession {
-    [_session stopRunning];
-    _session = nil;
+    if (_isRead) {return;}
+    _isRead = true;
     
-    [_previewLayer removeFromSuperlayer];
+    [_delegate captureOutput:result];
 }
 
 # pragma mark - AVCaptureMetadataOutputObjectsDelegate
@@ -83,7 +97,6 @@
         AVMetadataMachineReadableCodeObject *meta = metadataObjects[0];
         if ([[meta type] isEqualToString:AVMetadataObjectTypeQRCode]) {
             [self performSelectorOnMainThread:@selector(didGetQRCaptureResult:) withObject:[meta stringValue] waitUntilDone:NO];
-            [self performSelectorOnMainThread:@selector(stopSession) withObject:nil waitUntilDone:NO];
         }
     }
 }

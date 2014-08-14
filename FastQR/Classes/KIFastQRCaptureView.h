@@ -9,9 +9,19 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+@protocol KIFastQRCaptureDelegate
+
+- (void)captureOutput:(NSString *)obtainedString;
+
+@end
+
 @interface KIFastQRCaptureView : UIView <AVCaptureMetadataOutputObjectsDelegate>
 
 @property (nonatomic, strong) AVCaptureSession *session;
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
+@property (nonatomic, assign) id<KIFastQRCaptureDelegate> delegate;
+
+- (void)startCaptureWithDelegate:(id<KIFastQRCaptureDelegate>)delegate;
+- (void)stopCapture;
 
 @end
