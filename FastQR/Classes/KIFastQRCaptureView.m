@@ -77,7 +77,7 @@
 - (AVCaptureVideoPreviewLayer *)setupPreviewLayer {
     _previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_session];
     [_previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
-    [_previewLayer setFrame:self.frame];
+    [_previewLayer setFrame:self.bounds];
     return _previewLayer;
 }
 
