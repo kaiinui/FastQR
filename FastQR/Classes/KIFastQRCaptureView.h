@@ -11,7 +11,7 @@
 
 @protocol KIFastQRCaptureDelegate
 
-- (void)captureOutput:(NSString *)obtainedString;
+- (void)fastQRView:(UIView *)fastQRView captureOutput:(NSString *)obtainedString;
 
 @end
 

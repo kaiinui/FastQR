@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Classes/KIFastQRCaptureView.h"
 
-@interface KIViewController : UIViewController
+@interface KIViewController : UIViewController <KIFastQRCaptureDelegate>
 
 @end

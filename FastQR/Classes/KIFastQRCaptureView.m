@@ -105,7 +105,7 @@
     if ([_formerResult isEqualToString:result]) {return;}
     _formerResult = result;
     
-    [_delegate captureOutput:result];
+    [_delegate fastQRView:self captureOutput:result];
 }
 
 # pragma mark - AVCaptureMetadataOutputObjectsDelegate
