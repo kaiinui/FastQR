@@ -16,6 +16,8 @@ KIFastQRCaptureView *fastQR = [[KIFastQRCaptureView alloc] initWithFrame:self.vi
 And implement the delegate method.
 
 ```objc
+// <KIFastQRDelegate>
+
 - (void)fastQRView:(UIView *)fastQRView captureOutput:(NSString *)obtainedString;
 ```
 
