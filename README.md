@@ -1,6 +1,8 @@
 FastQR
 ======
 
+![](http://img.shields.io/cocoapods/v/KIFastQR.svg?style=flat)
+
 ![](https://raw.githubusercontent.com/kaiinui/FastQR/master/KIFastQRCaptureView.gif)
 
 Handle QR codes in few lines!
