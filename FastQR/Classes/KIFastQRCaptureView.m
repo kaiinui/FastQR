@@ -47,6 +47,10 @@
     [_previewLayer removeFromSuperlayer];
 }
 
+- (void)clearFormerResult{
+    _formerResult = nil;
+}
+
 # pragma mark - Private Methods
 
 - (void)initializeCapture {

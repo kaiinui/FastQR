@@ -22,5 +22,6 @@
 
 - (void)startCaptureWithDelegate:(id<KIFastQRCaptureDelegate>)delegate;
 - (void)stopCapture;
+- (void)clearFormerResult;
 
 @end
