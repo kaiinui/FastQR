@@ -1,2 +1,4 @@
 .DS_Store
 Pods
+FastQR.xcodeproj/*
+FastQR.xcworkspace/*
